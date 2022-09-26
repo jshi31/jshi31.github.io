@@ -1,702 +1,750 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Jing Shi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<style type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jing Shi | Home</title>
+  <meta name="description" content="Jing Shi">
+  <meta name="author" content="Jing Shi">
+  <meta property="og:title" content="Jing Shi" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jshi31.github.io/jingshi/" />
+  <meta property="og:site_name" content="Jing Shi" />
+  <link rel="canonical" href="http://www.martinsaveski.com" />
 
-	    /* Color scheme stolen from Sergey Karayev */
-	    
-	    a {
-	      color: #1772d0;
-	      text-decoration: none;
-	    }
-	    
-	    a:focus,
-	    a:hover {
-	      color: #f09228;
-	      text-decoration: none;
-	    }
-	    
-	    body,
-	    td,
-	    th,
-	    tr,
-	    p,
-	    a {
-	      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	      font-size: 18px
-	    }
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    
-	    heading {
-	      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	      font-size: 26px;
-	    }
-	    
-	    papertitle {
-	      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	      font-size: 18px;
-	      font-weight: 700
-	    }
-	    
-	    name {
-	      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	      font-size: 26px;
-	    }
-	    
-	    .one {
-	      width: 220px;
-	      height: 220px;
-	      position: relative;
-	    }
-	    
-	    .two {
-	      width: 220px;
-	      height: 220px;
-	      position: absolute;
-	      transition: opacity .2s ease-in-out;
-	      -moz-transition: opacity .2s ease-in-out;
-	      -webkit-transition: opacity .2s ease-in-out;
-	    }
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-	    .fade {
-	      transition: opacity .2s ease-in-out;
-	      -moz-transition: opacity .2s ease-in-out;
-	      -webkit-transition: opacity .2s ease-in-out;
-	    }
-	    
-	    span.highlight {
-	      background-color: #ffffd0;
-	    }
-	    </style>
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=./libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=./libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=./libs/custom/my_css.css>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131122111-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=./libs/external/jquery-3.1.1.min.js></script>
 
-		  gtag('config', 'UA-131122111-1');
-		</script>
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=./libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
 
-	</head>
-	<body>
- 
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=./libs/external/academicons-1.8.6/css/academicons.min.css>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=./libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=./libs/external/skeleton_tabs/skeleton-tabs.js></script>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/me_hawaii.jpg" width="200" alt="" /></span>
-					  <h1>Jing Shi   施靖</h1>
-						<p>Strike while the iron is hot<br />
-						</p>
-					</header>
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=./libs/external/timeline.css>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#news">News</a></li>
-							<li><a href="#publication">Publication</a></li>
-							<li><a href="#experience">Experience</a></li>
-							<li><a href="#course">Course</a></li>
-						</ul>
-					</nav>
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=./libs/external/github-prettify-theme.css>-->
+  <script src=./libs/custom/my_js.js></script>
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=./libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=./libs/icon.png>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Introduction</h2>
-										</header>
-										<p>I am a research scientist at <a href='https://research.adobe.com/'>Adobe Research</a>.<br>
-										I obtained CS Ph.D degree at University of Rochester in 2022. 
-										Before that, I got my bechalor degree from the University of Electronic Science and Technology of China.<br>
-									    My interest spans visual perception and generation/manipulation with the interaction of language.
-									    </p>
-								              <p align=center>
-								                <a href="document/Jing_Shi_CV.pdf" class="icon fa-CV alt"> CV </a><span class="label">&nbsp&nbsp
-								                <a href="https://scholar.google.com/citations?user=GPDTa9sAAAAJ&hl=en" class="icon fa-google alt"><span class="label">Google Scholar</span></a> &nbsp&nbsp
-								                <a href="https://www.linkedin.com/in/jingshi31/" class="icon fa-linkedin alt"><span class="label">Linkedin</span></a>&nbsp&nbsp
-								                <a href="https://github.com/jshi31" class="icon fa-github alt"><span class="label">Github</span></a>
-								              </p>
-									  </p>
-										  <h2>Connection</h2>
-										  <dl class="alt">
-<!-- 										    <dt>Office</dt>
-										    <dd>Wegmans 2403</dd> -->
-										    <dt>Email</dt>
-										    <dd>jingshi(at)adobe(dot)com</dd>
-									</div>
-								</div>
-							</section>
+</head>
+<body>
 
-						<!-- News -->
-							<section id="news" class="main special">
-								<header class="major">
-									<h2>News</h2>
-								</header> <p align="left">
-								[Sep/2022] I start my new position as a research sicentist at Adobe Research, San Jose, CA.<br>
-								[Sep/2022] Successfully defend my dissertation! Thanks to everyone who supported me and helped me along the way.<br>
-								[Mar/2022] One paper accepted by CVPR2022 about a unified model for color editing that can supports various downstream tasks.<br>
-								[Jul/2021] Three papers accepted by ICCV2021: two about language and scene understanding, one about language driven image editing.<br>
-								[Mar/2021] Our language driven image editing paper is accepted by CVPR2021. <br>
-								[Sep/2020] Our language driven image editing paper is accepted by ACCV2020 Oral. <br>
-								[Feb/2019] Our weakly supervised video grounding paper is accepted by CVPR 2019. <br>
-								</p>
-							</section>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
 
-						<!-- Publication -->
-							<section id="publication" class="main special">
-								<header class="major">
-									<h2>Publications</h2>
-								</header>
-								<ul class="features">
-									<li></li>
-								</ul>
-								<table width="1000" border="0" align="center" cellspacing="0" cellpadding="0">
-   								<tr>
-						        <td>
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="./"><img class="u-max-circular" src='./assets/profile-pics/JS_formal_big.jpg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Jing Shi &nbsp <img src='./assets/profile-pics/name.png', 
+              height="37" > </h1> 
+            <p>Research Scientist, Adobe Research</p>
+            <p>jingshi [AT] adobe.com</p>
+            <p>
+              <span onclick="window.open('https://twitter.com/Jingorz')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
 
-						        	<!--SpaceEdit CVPR22-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='SpaceEdit'><img src='images/spaceedit.jpg' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://arxiv.org/abs/2112.00180">
-						            <papertitle>SpaceEdit: Learning a Unified Editing Space for Open-Domain Image Editing</papertitle>
-						            </a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-						            <a href="https://www.cs.rochester.edu/u/hzheng15/haitian_homepage/index.html">Haitian Zheng</a>,
-						            Alex Smith,
-						            <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2022
-						            <br>
-						            <p></p>
-						            <p align="left">We introduce a pretrained pix2pix model with a unified editing space that can work for various editing-related downstream tasks.</p>
-						            </td>
-						            </tr>
+              <span onclick="window.open('https://www.linkedin.com/in/jingshi31/')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
 
-						        	<!--WS-SGG ICCV2021-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='CSSC'><img src='images/WS-SGG.png' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Shi_A_Simple_Baseline_for_Weakly-Supervised_Scene_Graph_Generation_ICCV_2021_paper.pdf">
-						            <papertitle>A Simple Baseline for Weakly-Supervised Scene Graph Generation</papertitle>
-						        	</a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="http://pages.cs.wisc.edu/~yiwuzhong/">Yiwu Zhong</a>,
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-						            <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>International Conference on Computer Vision (ICCV)</em>, 2021
-						            <br>
-						            <br>					            
-						            <p></p>
-						            <p align="left">We construct a versatile baseline for Weakly-Supervised Scene Graph Generation.</p>
-						            </td>
-						            </tr>
+              <span onclick="window.open('https://github.com/jshi31')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
 
-						        	<!--Language to scene graph ICCV2021-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='CSSC'><img src='images/txt2sg.png' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://arxiv.org/abs/2109.02227">
-						            <papertitle>Learning to Generate Scene Graph from Natural Language Supervision</papertitle>
-						        	</a>
-						            <br>
-						            <a href="http://pages.cs.wisc.edu/~yiwuzhong/">Yiwu Zhong</a>,
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://jwyang.github.io/">Jianwei Yang</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
-						            <br>
-						            <em>International Conference on Computer Vision (ICCV)</em>, 2021
-						            <br>
-						            <a href="https://github.com/YiwuZhong/SGG_from_NLS">code</a> 
-						            <br>					            
-						            <p></p>
-						            <p align="left">We generate scene graph from only natural language supervision.</p>
-						            </td>
-						            </tr>
+              <span onclick="window.open('https://scholar.google.com/citations?user=GPDTa9sAAAAJ&hl=en')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
 
-						        	<!--GAN ICCV2021-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='CSSC'><img src='images/LGGIE.png' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jiang_Language-Guided_Global_Image_Editing_via_Cross-Modal_Cyclic_Mechanism_ICCV_2021_paper.pdf">
-						            <papertitle>Language-Guided Global Image Editing via Cross-Modal Cyclic Mechanism</papertitle>
-						        	</a> 
-						            <br>
-						            <a href="https://wtjiang98.github.io/">Wentao Jiang</a>,
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-									Jiayun Wang,
-									Chen Gao,
-									<papertitle>Jing Shi</papertitle>,
-									<a href="https://research.adobe.com/person/zhe-lin/">Zhe Lin</a>,
-									<a href="http://colalab.org/people">Si Liu </a>,
-						            <br>
-						            <em>International Conference on Computer Vision (ICCV)</em>, 2021
-						            <br>
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=./index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=./index.html#news>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=./index.html#publications>Publications</a></li>
+          <!-- <li class="navbar-item"><a class="navbar-link" href=./index.html#projects>Projects</a></li> -->
+          <li class="navbar-item"><a class="navbar-link" href=./index.html#resume>CV</a></li>
+        </ul>
+      </div>
+    </nav>
 
-						            <br>					            
-						            <p></p>
-						            <p align="left">We tackle language-guided global image editing via GAN model with cross-modal consistency </p>
-						            </td>
-						            </tr>
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+  I am a research scientist at <a href="https://research.adobe.com/" target="_blank">Adobe Research</a>, San Jose. My primary interests are in visual perception and generation/manipulation with the interaction of language. My recent work has focused on language-based image editing, scene understanding, and content authenticity. I am also interested in the principled way to understand the representation learning.
+  </p>
 
-						        	<!--Learn by Planning CVPR2021-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='CSSC'><img src='images/LearnByPlan.png' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href='https://openaccess.thecvf.com/content/CVPR2021/papers/Shi_Learning_by_Planning_Language-Guided_Global_Image_Editing_CVPR_2021_paper.pdf'>
-						            <papertitle>Learning by Planning: Language-Guided Global Image Editing</papertitle>
-						        	</a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-						            <a href="https://sites.google.com/site/trungbuistanford/">Trung Bui</a>,
-						            <a href="http://francky.me/research.php">Franck Dernoncourt</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2021
-						            <br>
-						            <a href="https://jshi31.github.io/T2ONet">project page</a> / 
-						            <a href="https://github.com/jshi31/T2ONet">code&dataset</a> 
-						            <br>					            
-						            <p></p>
-						            <p align="left">We contruct a new framework for language-guided global image editing.</p>
-						            </td>
-						            </tr>
+  <p>
+  Before joining Adobe, I obtained my CS PhD at the University of Rochester in 2022, advised by <a href="https://www.cs.rochester.edu/u/cxu22/" target="_blank">Chenliang Xu</a>, B.E. degree at University of Electronic Science and Technology of China. 
+  I have interned at Adobe Research with <a href="https://sites.google.com/view/ningxu/" target="_blank">Ning Xu</a> and Tencent with <a href="https://pages.cs.wisc.edu/~jiaxu/" target="_blank"> Jia Xu</a> and <a href="http://boqinggong.info/" target="_blank">Boqing Gong</a>.
+  </p> 
 
+  <div style="color:red;"><b>Internship advice:</b></div> I'm happy to collaborate with enthusiastic and talented PhD in computer science. 
+  I will hire multiple research interns in the summer. 
+  If you are interested in working with me, e-mail me your CV and a brief description of what you would like to work on during your internship.
+</div>
 
-						        	<!--CSSC ICLR2020-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='CSSC'><img src='images/CSSC.jpg' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://arxiv.org/abs/2010.01381">
-						            <papertitle>Cubic Spline Smoothing Compensation for Irregularly Sampled Sequences</papertitle>
-						            </a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://jing-bi.github.io/">Jing Bi</a>,
-						            <a href="https://yingrliu.com/">Yingru Liu</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>Arxiv Preprint</em>
-						            <br>
-						            <p></p>
-						            <p align="left">We introduce the cubic spline smoothing compensation upon ODE-RNN model for irregularly observed time series.</p>
-						            </td>
-						            </tr>
+<!-- ========== News ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
+  <div  style="overflow-y: scroll; height:200px;">
+    <table border="1" style="border-width: 0px;" width="1050">
+      <tbody>
+      <tr>
+        <td style="border-style: none; border-width: medium;">
+          <ul class="STYLE238">
 
-						        	<!--SDN ICLR2020-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='NeurlSDE'><img src='images/NeurlSDE.jpg' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://arxiv.org/abs/2006.06145">
-						            <papertitle>Learning Continuous-Time Dynamics by Stochastic Differential Networks</papertitle>
-						            </a>
-						            <br>
-						            <a href="https://yingrliu.com/">Yingru Liu</a>,
-						            Yucheng Xing, 
-						            Xuewen Yang,
-						            Xin Wang,
-									<papertitle>Jing Shi</papertitle>,
-									Di Jin,
-									Zhaoyue Chen
-						            <br>
-						            <em>Arxiv Preprint</em>
-						            <br>
-						            <p></p>
-
-						            </td>
-						            </tr>
-
-
-						        	<!--LDIE ACCV2020-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='LDIE'><img src='images/LDIE.png' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://arxiv.org/abs/2010.02330">
-						            <papertitle>A Benchmark and Baseline for Language-Driven Image Editing  </papertitle>
-						        	</a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-						            <a href="https://sites.google.com/site/trungbuistanford/">Trung Bui</a>,
-						            <a href="http://francky.me/research.php">Franck Dernoncourt</a>,
-						            <a href="http://www.zheng-wen.com">Zheng Wen</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>Asian Conference on Computer Vision (ACCV)</em>, 2020 <papertitle>(Oral)</papertitle>
-						            <br>
-						            <a href="https://github.com/jshi31/LDIE_ACCV">code</a> /
-						            <a href="https://sites.google.com/view/gierdataset">dataset</a> 
-						            <p></p>
-						            <p align="left">We introduce the GIER dataset and a pipeline for language-driven image editing.</p>
-						            </td>
-						            </tr>
-
-						            <!--EMGAN IJCAI2020-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='LDIE'><img src='images/GAN_EM.jpg' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://www.ijcai.org/Proceedings/2019/0612.pdf">
-						            <papertitle>GAN-EM: GAN Based EM Learning Framework </papertitle>
-						            </a>
-						            <br>
-						            <a href="https://www.linkedin.com/in/wentian-zhao-b3576815b/">Wentian Zhao*</a>,
-						            <a href="https://scholar.google.com/citations?user=0l0fSYIAAAAJ&hl=en">Shaojie Wang*</a>,
-						            Zhihuai Xie,
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2019
-						            <br>
-						            <a href="https://github.com/zhaowt61/GAN-EM">code</a>
-						            <p></p>
-						            </td>
-						            </tr>
-
-						        	<!--VidGround CVPR2019-->
-						        	<tr>
-						            <td width="25%">
-						            <div class="two" id='vidground'><img src='images/vidground.png' width="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Not_All_Frames_Are_Equal_Weakly-Supervised_Video_Grounding_With_Contextual_CVPR_2019_paper.pdf">
-						            <papertitle><i>Not All Frames Are Equal</i>: Weakly-Supervised Video Groundingwith Contextual Similarity and Visual Clustering Losses </papertitle>
-						            </a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="http://pages.cs.wisc.edu/~jiaxu/">Jia Xu</a>,
-						            <a href="http://boqinggong.info/">Boqing Gong</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2019
-						            <br>
-						            <a href="http://www.cs.rochester.edu/~cxu22/r/videoground/">project page</a>/
-						            <a href="https://github.com/jshi31/NAFAE">code</a>
-						            <p></p>
-						            <p align="left">We introduce contextual smilarity loss and visual clustering loss for weakly supervised video grounding.</p>
-						            </tr>
-
-						        	<!--AVE ECCV2018-->
-						            <tr>
-						            <td width="25%">
-						            <div class="two" id='AVE_image'><img src='images/AVE.png' width="220" height="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.pdf">
-						            <papertitle>Audio-Visual Event Localization in Unconstrained Videos </papertitle>
-						            </a>
-						            <br>
-						            <a href="http://yapengtian.org/">Yapeng Tian</a>,
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="http://www2.ece.rochester.edu/~bli23/">Bochen Li</a>,
-						            <a href="http://www2.ece.rochester.edu/~zduan/">Zhiyao Duan</a>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>European Conference on Computer Vision (ECCV)</em>, 2018
-						            <br>
-						            <a href="https://sites.google.com/view/audiovisualresearch">project page</a>/
-									<a href="https://github.com/YapengTian/AVE-ECCV18">code</a>
-						            <p></p>
-						            <p align="left">We introduce audio-visual event localization to understand the interaction of vision and audio.</p>
-						            </td>
-						            </tr>
-
-						        	<!--Boundary Control-->
-						            <tr>
-						            <td width="25%">
-						            <div class="two" id='bnd_image'><img src='images/boundarycontrol.jpg' width="220" height="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://ieeexplore.ieee.org/document/7962253">
-						            <papertitle>Boundary Vibration Control of Variable Length Crane Systems in Two Dimensional Space with Output Constraints </papertitle>
-						            </a>
-						            <br>
-						            <a href="https://www.researchgate.net/profile/Xiuyu_He">Xiuyu He</a>,
-						            <a href="https://www.researchgate.net/profile/Wei_He29">Wei He</a>,						            
-									<papertitle>Jing Shi</papertitle>,
-						            <a href=https://www.researchgate.net/profile/Changyin_Sun3>Changyin Sun</a>
-						            <br>
-						            <em>IEEE/ASME Transactions on Mechatronics (TMech)</em>, 2017
-						            <br>
-						            <p></p>
-						            <p align="left">We demonstrate the lyapunov stability of the boundary control for the moving crane system in 2-D space.</p>
-						            </tr>
-
-						        	<!--Eddy Current-->
-						            <tr>
-						            <td width="25%">
-						            <div class="two" id='AVE_image'><img src='images/eddycurrent.png' width="220" height="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="https://ieeexplore.ieee.org/document/7992029">
-						            <papertitle>Impact Damage Detection and Characterization using Eddy Current Pulsed Thermography </papertitle>
-						            </a>
-						            <br>
-						            <a href="https://scholar.google.com/citations?user=BJR0ZGsAAAAJ&hl=en">Yizhe Wang</a>,
-						            Han Ke,						            
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://scholar.google.com/citations?hl=en&user=mYlmFbAAAAAJ&view_op=list_works&sortby=pubdate">Bing Gao</a>,
-						            <a href="https://scholar.google.com/citations?user=Mh94SyYAAAAJ&hl=en">Guiyun Tian</a>
-						            <br>
-						            <em>IEEE Far East NDT New Technology & Application Forum (FENDT)</em>, 2016
-						            <br>
-						            <p></p>
-						            <p align="left">We use eddy current pulse thermography to detect impact damages of torque arm in aircraft brake system.</p>
-						            </tr>
-
-						        </table>
-        						</td>
-    							</tr>
-  								</table>
-							<footer class="major"></footer>
-							</section>
-
-                        <!-- Experience Section -->
-							<section id="experience" class="main special">
-								<header class="major">
-								<h2>Experience</h2>
-								</header>
-								<ul class="features">
-									<li></li>
-								</ul>
-								<table width="1000" border="0" align="center" cellspacing="0" cellpadding="0">
-   								<tr>
-						        <td>
-
-						        <!-- Project -->
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-						          <tr>
-						            <td>
-						              <heading>Project</heading>
-						            </td>
-						          </tr>
-						        </table>
-
-
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-						        	<!--Diff Net-->
-						            <tr>
-						            <td width="25%">
-						            <div class="two" id='AVE_image'><img src='images/diffnet.png' width="220" height="220"></div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <a href="document/Differential_Network_for_Video_Object_Detection.pdf">
-						            <papertitle> Differential Network for Video Object Detection </papertitle>
-						            </a>
-						            <br>
-									<papertitle>Jing Shi</papertitle>,
-						            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-						            <br>
-						            <em>CSC 577 <a href="http://www.cs.rochester.edu/~cxu22/t/577F17/">Advanced Topics in Computer Vision</a></em>, 2017
-						            <br>
-									<a href="https://github.com/jshi31/diffnet">code</a>
-						            <p></p>
-						            <p align="left">For flow based video obejct detection, we propose the differential network to select the key frame. Then we adapt the sequential NMS to an incremental form so that it is both time-efficient and accurate.</p>
-						            </td>
-						            </tr>
-						        </table>
-
-
-						        <!-- Intership -->
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-						          <tr>
-						            <td>
-						              <heading>Internship</heading>
-						            </td>
-						          </tr>
-						        </table>
-
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-						        	<!--Tencent-->
-						            <tr>
-						            <td valign="middle" width="25%">
-						            <div class="two">
-						            <img src='images/tencent.png' width="240" height="110">
-						            </div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <papertitle>
-						            <a href=https://ai.tencent.com/ailab/index.html>
-						            Tencent AI Lab
-						            </a> </papertitle>
-						            , &nbsp&nbsp
-						            Shenzhen, &nbsp&nbsp
-						            <em> May - Aug 2018 </em>
-						            <br>
-						            <p>
-						             Collaborator: 
-						            <a href="http://pages.cs.wisc.edu/~jiaxu/">Jia Xu</a>,
-						            <a href="http://boqinggong.info/">Boqing Gong</a>
-						            <br>
-						            Project: Weakly supervised video grounding.
-						        	</p>
-						            </td>
-						            </tr>
-
-						        </table>
-
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-						        	<!--Adobe-->
-						            <tr>
-						            <td valign="middle" width="25%">
-						            <div class="two">
-						            <img src='images/adobe_logo.jpg' width="240">
-						            </div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <papertitle>
-						            <a href=https://research.adobe.com/>
-						            Adobe Research
-						            </a> </papertitle>
-						            , &nbsp&nbsp
-						            San Jose, &nbsp&nbsp
-						            <em> May - Sep 2019 </em>
-						            <br>
-						            <p>
-						             Collaborator: 
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-						            <br>
-						            Project: Language Driven Image Editing.
-						        	</p>
-						            </td>
-						            </tr>
-						        </table>
-
-						        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-						        	<!--Adobe-->
-						            <tr>
-						            <td valign="middle" width="25%">
-						            <div class="two">
-						            <img src='images/adobe_logo.jpg' width="240">
-						            </div>
-						            </td>
-						            <td valign="top" width="75%">
-						            <papertitle>
-						            <a href=https://research.adobe.com/>
-						            Adobe Research
-						            </a> </papertitle>
-						            , &nbsp&nbsp
-						            San Jose, &nbsp&nbsp
-						            <em> May - Sep 2021 </em>
-						            <br>
-						            <p>
-						             Collaborator: 
-						            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
-						            <br>
-						            Project: Unified Model for Various Image Editing Tasks.
-						        	</p>
-						            </td>
-						            </tr>
-						        </table>
-        						</td>
-    							</tr>
-  								</table>
-
-
-        						</td>
-    							</tr>
-  								</table>
-
-
-							  <footer class="major"> </footer>
-							</section>
+            <li>[Sep/2022] I start my new position as a research sicentist at Adobe Research, San Jose, CA.</li> 
+            <li>[Sep/2022] Successfully defend my dissertation! Thanks to everyone who supported me and helped me along the way.</li> 
+            <li>[Mar/2022] One paper accepted by CVPR2022 about a unified model for color editing that can supports various downstream tasks.</li>
+            <li>[Jul/2021] Three papers accepted by ICCV2021: two about language and scene understanding, one about language driven image editing.</li>
+            <li>[Mar/2021] Our language driven image editing paper is accepted by CVPR2021. </li>
+            <li>[Sep/2020] Our language driven image editing paper is accepted by ACCV2020 Oral.</li>
+            <li>[Feb/2019] Our weakly supervised video grounding paper is accepted by CVPR 2019.</li>
+          </ul>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 
 
-						<!-- Course Section -->
-							<section id="course" class="main special">
-								<header class="major">
-									<h2>Course</h2>
-								</header>
-									<table width="100" border="1">
-									  <tr>
-									    <th scope="row">CSC 400 <a href="https://www.cs.rochester.edu/~nelson/courses/csc_400/csc_400.html">Problem Seminar</th>
-									    <th scope="row">CSC 440 <a href="http://www.cs.rochester.edu/courses/240/Fall2017.html">Data Mining</a></th>
-								      </tr>
-									  <tr>
-									    <th scope="row">CSC 454 <a href="https://www.cs.rochester.edu/u/scott/courses/254/">Program Language Design and Implementation</a></th>
-									    <th scope="row">CSC 577 <a href="http://www.cs.rochester.edu/~cxu22/t/577F17/">Advanced Topics in Computer Vision</a></th>
-								      </tr>
-									  <tr>
-									    <th scope="row">CSC 446 <a href="https://www.cs.rochester.edu/~gildea/2018_Spring/">Machine Learning</a></th>
-									    <th scope="row">CSC 484 <a href="http://www.cs.rochester.edu/u/stefanko/Teaching/18CS484/">Advanced Algorithms</a></th>
-								      </tr>
-									  <tr>
-									    <th scope="row">CSC 455 <a href="https://roclocality.org/2017/01/03/cs-255455-spring-2017/">Software Analysis and Improvement</a></th>
-									    <th scope="row">CSC 453 <a href="https://roclocality.org/2017/08/18/csc-253-fall-2017/">Dynamic Language and Software Development</a></th>
-								      </tr>
-									  <tr>
-									    <th scope="row">CSC 480 Computing Model and Limitation</th>
-									    <th scope="row">CSC 249/449 <a href="https://www.cs.rochester.edu/~cxu22/t/249S19/">Machine Vision</a> [<a href="https://github.com/jshi31/csc249tracking">Teaching Assistant</a>]</th>
-								      </tr>
 
-								    </table>
-									<p>&nbsp;</p>
-								
-							  <footer class="major"> </footer>
-							</section>
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="https://scholar.google.com/citations?user=GPDTa9sAAAAJ&hl=en" target="_blank">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-all">All</div></li>
+    <li><div class="button" data-ref="#papers-selected">Selected</div></li>
+  </ul>
+
+  <div class="tab-content">
 
 
-						
+    <!-- All Paper -->
+    <div class="tab-pane active" id="papers-all">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
-	</body>
+      <!-- SpaceEdit -->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2022_spaceedit/spaceedit.jpg" width="220"/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>SpaceEdit: Learning a Unified Editing Space for Open-Domain Image Color Editing</b></p>
+          <p>
+          <b>Jing Shi</b>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://www.cs.rochester.edu/u/hzheng15/haitian_homepage/index.html">Haitian Zheng</a>,
+            Alex Smith,
+            <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>Computer Vision and Pattern Recognition (CVPR)</em>, 2022</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2112.00180" target="_blank">Paper</a>
+              <!-- <a class="button" href="https://gewu-lab.github.io/audio-visual-learning/" target="_blank">Project</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- WS-SGG -->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2021_wssgg/WS-SGG.png" width="220" height="110"/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>A Simple Baseline for Weakly-Supervised Scene Graph Generation</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="http://pages.cs.wisc.edu/~yiwuzhong/">Yiwu Zhong</a>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>International Conference on Computer Vision (ICCV)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Shi_A_Simple_Baseline_for_Weakly-Supervised_Scene_Graph_Generation_ICCV_2021_paper.pdf" target="_blank">Paper</a>
+              <!-- <a class="button" href="https://gewu-lab.github.io/audio-visual-learning/" target="_blank">Project</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!--Language to scene graph ICCV2021-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2021_txt2sg/txt2sg.png" width="220", height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Learning to Generate Scene Graph from Natural Language Supervision</b></p>
+          <p>
+            <a href="http://pages.cs.wisc.edu/~yiwuzhong/">Yiwu Zhong</a>,
+            <b>Jing Shi</b>,
+            <a href="https://jwyang.github.io/">Jianwei Yang</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+            <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
+          </p>
+          <p><em>International Conference on Computer Vision (ICCV)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2109.02227" target="_blank">Paper</a>
+              <a class="button" href="https://github.com/YiwuZhong/SGG_from_NLS" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--GAN ICCV2021-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2021_LGGIE/LGGIE.png" width="220", height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Language-Guided Global Image Editing via Cross-Modal Cyclic Mechanism</b></p>
+          <p>
+            <a href="https://wtjiang98.github.io/">Wentao Jiang</a>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            Jiayun Wang,
+            Chen Gao,
+            <b>Jing Shi</b>,
+            <a href="https://research.adobe.com/person/zhe-lin/">Zhe Lin</a>,
+            <a href="http://colalab.org/people">Si Liu </a>,
+          </p>
+          <p><em>International Conference on Computer Vision (ICCV)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Jiang_Language-Guided_Global_Image_Editing_via_Cross-Modal_Cyclic_Mechanism_ICCV_2021_paper.pdf" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Learn by Planning CVPR2021-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2021_LearnByPlan/LearnByPlan.png" width="220", height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Learning by Planning: Language-Guided Global Image Editing</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://sites.google.com/site/trungbuistanford/">Trung Bui</a>,
+            <a href="http://francky.me/research.php">Franck Dernoncourt</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+						            
+          <p><em>Computer Vision and Pattern Recognition (CVPR)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Shi_Learning_by_Planning_Language-Guided_Global_Image_Editing_CVPR_2021_paper.pdf" target="_blank">Paper</a>
+              <a class="button" href="https://jshi31.github.io/T2ONet" target="_blank">Project</a>
+              <a class="button" href="https://github.com/jshi31/T2ONet" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!--CSSC ICLR2020-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2020_CSSC/CSSC.jpg" width="220", height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Cubic Spline Smoothing Compensation for Irregularly Sampled Sequences</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="https://jing-bi.github.io/">Jing Bi</a>,
+            <a href="https://yingrliu.com/">Yingru Liu</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>Arxiv Preprint</em></p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2010.01381" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!--SDN ICONIP2021-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2020_NeurlSDE/NeurlSDE.jpg" width="220" height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Learning Continuous-Time Dynamics by Stochastic Differential Networks</b></p>
+          <p>
+            <a href="https://yingrliu.com/">Yingru Liu</a>,
+            Yucheng Xing, 
+            Xuewen Yang,
+            Xin Wang,
+            <b>Jing Shi</b>,
+            Di Jin,
+            Zhaoyue Chen
+          </p>
+          <p><em>International Conference on Neural Information Processing (ICONIP)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2006.06145" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!--LDIE ACCV2020-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2020_LDIE/LDIE.png" width="220" height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>A Benchmark and Baseline for Language-Driven Image Editing</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://sites.google.com/site/trungbuistanford/">Trung Bui</a>,
+            <a href="http://francky.me/research.php">Franck Dernoncourt</a>,
+            <a href="http://www.zheng-wen.com">Zheng Wen</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>Asian Conference on Computer Vision (ACCV)</em>, 2020</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2010.02330" target="_blank">Paper</a>
+              <a class="button" href="https://sites.google.com/view/gierdataset">dataset</a> 
+          </div>
+        </div>
+      </div>
+
+
+      <!--EMGAN IJCAI2020-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2019_EMGAN/GAN_EM.jpg" width="220" height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>GAN-EM: GAN Based EM Learning Framework</b></p>
+          <p>
+            <a href="https://www.linkedin.com/in/wentian-zhao-b3576815b/">Wentian Zhao<sup>‡</sup></a>,
+            <a href="https://scholar.google.com/citations?user=0l0fSYIAAAAJ&hl=en">Shaojie Wang<sup>‡</sup></a>,
+            Zhihuai Xie,
+            <b>Jing Shi</b>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2019</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://www.ijcai.org/Proceedings/2019/0612.pdf" target="_blank">Paper</a>
+              <a class="button" href="https://github.com/zhaowt61/GAN-EM" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!--VidGround CVPR2019-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2019_NAFAE/vidground.png" width="220" height=130/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b><i>Not All Frames Are Equal</i>: Weakly-Supervised Video Groundingwith Contextual Similarity and Visual Clustering Losses</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="http://pages.cs.wisc.edu/~jiaxu/">Jia Xu</a>,
+            <a href="http://boqinggong.info/">Boqing Gong</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2019</p>
+          <div class="paper-buttons">
+              <a class="button" href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Not_All_Frames_Are_Equal_Weakly-Supervised_Video_Grounding_With_Contextual_CVPR_2019_paper.pdf" target="_blank">Paper</a>
+              <a class="button" href="http://www.cs.rochester.edu/~cxu22/r/videoground/" target="_blank">Project</a>
+              <a class="button" href="https://github.com/jshi31/NAFAE" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!--AVE ECCV2018-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2018_AVE/AVE.png" width="220" height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Audio-Visual Event Localization in Unconstrained Videos</b></p>
+          <p>
+            <a href="http://yapengtian.org/">Yapeng Tian</a>,
+            <b>Jing Shi</b>,
+            <a href="http://www2.ece.rochester.edu/~bli23/">Bochen Li</a>,
+            <a href="http://www2.ece.rochester.edu/~zduan/">Zhiyao Duan</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>European Conference on Computer Vision (ECCV)</em>, 2018</p>
+          <div class="paper-buttons">
+              <a class="button" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.pdf" target="_blank">Paper</a>
+              <a class="button" href="https://sites.google.com/view/audiovisualresearch" target="_blank">Project</a>
+              <a class="button" href="https://github.com/YapengTian/AVE-ECCV18" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Boundary Control-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2017_boundary/boundarycontrol.jpg" width="220" height=120/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Boundary Vibration Control of Variable Length Crane Systems in Two Dimensional Space with Output Constraints</b></p>
+          <p>
+            <a href="https://www.researchgate.net/profile/Xiuyu_He">Xiuyu He</a>,
+            <a href="https://www.researchgate.net/profile/Wei_He29">Wei He</a>,						            
+            <b>Jing Shi</b>,
+            <a href=https://www.researchgate.net/profile/Changyin_Sun3>Changyin Sun</a>
+          </p>
+          <p><em>IEEE/ASME Transactions on Mechatronics (TMech)</em>, 2017</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://ieeexplore.ieee.org/document/7962253" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
+    <!-- Paper Selected -->
+    <div class="tab-pane" id="papers-selected">
+
+      <!-- SpaceEdit -->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2022_spaceedit/spaceedit.jpg" width="220"/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>SpaceEdit: Learning a Unified Editing Space for Open-Domain Image Color Editing</b></p>
+          <p>
+          <b>Jing Shi</b>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://www.cs.rochester.edu/u/hzheng15/haitian_homepage/index.html">Haitian Zheng</a>,
+            Alex Smith,
+            <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>Computer Vision and Pattern Recognition (CVPR)</em>, 2022</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2112.00180" target="_blank">Paper</a>
+              <!-- <a class="button" href="https://gewu-lab.github.io/audio-visual-learning/" target="_blank">Project</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- WS-SGG -->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2021_wssgg/WS-SGG.png" width="220" height="110"/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>A Simple Baseline for Weakly-Supervised Scene Graph Generation</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="http://pages.cs.wisc.edu/~yiwuzhong/">Yiwu Zhong</a>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>International Conference on Computer Vision (ICCV)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Shi_A_Simple_Baseline_for_Weakly-Supervised_Scene_Graph_Generation_ICCV_2021_paper.pdf" target="_blank">Paper</a>
+              <!-- <a class="button" href="https://gewu-lab.github.io/audio-visual-learning/" target="_blank">Project</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!--Language to scene graph ICCV2021-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2021_txt2sg/txt2sg.png" width="220", height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Learning to Generate Scene Graph from Natural Language Supervision</b></p>
+          <p>
+            <a href="http://pages.cs.wisc.edu/~yiwuzhong/">Yiwu Zhong</a>,
+            <b>Jing Shi</b>,
+            <a href="https://jwyang.github.io/">Jianwei Yang</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+            <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
+          </p>
+          <p><em>International Conference on Computer Vision (ICCV)</em>, 2021</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2109.02227" target="_blank">Paper</a>
+              <a class="button" href="https://github.com/YiwuZhong/SGG_from_NLS" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!--CSSC ICLR2020-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2020_CSSC/CSSC.jpg" width="220", height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Cubic Spline Smoothing Compensation for Irregularly Sampled Sequences</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="https://jing-bi.github.io/">Jing Bi</a>,
+            <a href="https://yingrliu.com/">Yingru Liu</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>Arxiv Preprint</em></p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2010.01381" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!--LDIE ACCV2020-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2020_LDIE/LDIE.png" width="220" height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>A Benchmark and Baseline for Language-Driven Image Editing</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="https://sites.google.com/view/ningxu/">Ning Xu</a>,
+            <a href="https://sites.google.com/site/trungbuistanford/">Trung Bui</a>,
+            <a href="http://francky.me/research.php">Franck Dernoncourt</a>,
+            <a href="http://www.zheng-wen.com">Zheng Wen</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>Asian Conference on Computer Vision (ACCV)</em>, 2020</p>
+          <div class="paper-buttons">
+              <a class="button" href="https://arxiv.org/abs/2010.02330" target="_blank">Paper</a>
+              <a class="button" href="https://sites.google.com/view/gierdataset">dataset</a> 
+          </div>
+        </div>
+      </div>
+
+      <!--VidGround CVPR2019-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2019_NAFAE/vidground.png" width="220" height=130/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b><i>Not All Frames Are Equal</i>: Weakly-Supervised Video Groundingwith Contextual Similarity and Visual Clustering Losses</b></p>
+          <p>
+            <b>Jing Shi</b>,
+            <a href="http://pages.cs.wisc.edu/~jiaxu/">Jia Xu</a>,
+            <a href="http://boqinggong.info/">Boqing Gong</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2019</p>
+          <div class="paper-buttons">
+              <a class="button" href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Not_All_Frames_Are_Equal_Weakly-Supervised_Video_Grounding_With_Contextual_CVPR_2019_paper.pdf" target="_blank">Paper</a>
+              <a class="button" href="http://www.cs.rochester.edu/~cxu22/r/videoground/" target="_blank">Project</a>
+              <a class="button" href="https://github.com/jshi31/NAFAE" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!--AVE ECCV2018-->
+      <div >
+        <div class="figure">
+          <img style="float:left;margin-bottom:20px;margin-right:30px;vertical-align:middle;" src="./assets/publications/2018_AVE/AVE.png" width="220" height=110/> 
+        </div>
+        <div class="paper">
+          <p class="title"><b>Audio-Visual Event Localization in Unconstrained Videos</b></p>
+          <p>
+            <a href="http://yapengtian.org/">Yapeng Tian</a>,
+            <b>Jing Shi</b>,
+            <a href="http://www2.ece.rochester.edu/~bli23/">Bochen Li</a>,
+            <a href="http://www2.ece.rochester.edu/~zduan/">Zhiyao Duan</a>,
+            <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
+          </p>
+          <p><em>European Conference on Computer Vision (ECCV)</em>, 2018</p>
+          <div class="paper-buttons">
+              <a class="button" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.pdf" target="_blank">Paper</a>
+              <a class="button" href="https://sites.google.com/view/audiovisualresearch" target="_blank">Project</a>
+              <a class="button" href="https://github.com/YapengTian/AVE-ECCV18" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vitæ</h4>
+
+  <p>Full Resume in <a href=./assets/cv/Jing_Shi_CV.pdf target="_blank">PDF</a>.</p>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Adobe Research</span>
+          <span class="time-wrapper"><span class="time">2022 - now</span></span>
+        </div>
+        <div class="desc"><b>Research  Scientist</b> <br/> Media Intelligence Lab</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">University of Rochester</span>
+          <span class="time-wrapper"><span class="time">2017 - 2022</span></span>
+        </div>
+        <div class="desc"><b>Ph.D. Student</b> <br/> Department of Computer Science</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Adobe Research</span>
+          <span class="time-wrapper"><span class="time">Summer 2021</span></span>
+        </div>
+        <div class="desc"><b>Research Intern</b> <br/>Media Intelligence Lab</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Adobe Research</span>
+          <span class="time-wrapper"><span class="time">Summer 2019</span></span>
+        </div>
+        <div class="desc"><b>Research Intern</b> <br/>Media Intelligence Lab</div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <div class="direction-l">
+      
+        <div class="flag-wrapper">
+          <span class="flag">Tencent AI Lab</span>
+          <span class="time-wrapper"><span class="time">Summer 2018</span></span>
+        </div>
+        <div class="desc"><b>Research Intern</b><br/>Reinforcement Learning Center </div>
+      </div>
+    </li>
+    
+    
+    <li>
+      
+      <div class="direction-r">
+      
+        <div class="flag-wrapper">
+          <span class="flag">University of Electronic Sciense and Technology of China</span>
+          <span class="time-wrapper"><span class="time">2013 - 2017</span></span>
+        </div>
+        <div class="desc"><b>B.E. Student</b> <br/> Department of Automation Engineering </div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+
+<div class="docs-section" id="template">
+  This website was built with <a href="https://jekyllrb.com/">jekyll</a> based on a template from <a href="https://web.stanford.edu/~msaveski/" target="_blank">Martin Saveski</a>.
+</div>
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          Jing Shi
+        </div>
+        <div class="four columns">
+          jingshi [AT] adobe.com
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('https://twitter.com/Jingorz')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://www.linkedin.com/in/jingshi31/')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://github.com/jshi31')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('https://scholar.google.com/citations?user=GPDTa9sAAAAJ&hl=en')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131122111-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131122111-1');
+  </script>
+
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
