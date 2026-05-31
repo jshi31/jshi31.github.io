@@ -190,6 +190,15 @@ window.PUBLICATIONS = [
     selected: false
   },
   {
+    title: "RETOUCHIQ: MLLM Agents for Instruction-Based Image Retouching with Generalist Reward",
+    authors: ["Qiucheng Wu", "Jing Shi", "Simon Jenni", "Kushal Kafle", "Tianyu Wang", "Shiyu Chang", "Handong Zhao"],
+    venue: "Computer Vision and Pattern Recognition (CVPR), 2026",
+    image: "./assets/publications/2026_arxiv_retouchiq/teaser.jpg",
+    links: [{ label: "Paper", url: "https://arxiv.org/abs/2602.17558" }],
+    topics: ["editing", "vlm"],
+    selected: false
+  },
+  {
     title: "Stepwise Credit Assignment for GRPO on Flow-Matching Models",
     authors: ["Yash Savani", "Branislav Kveton", "Yuchen Liu", "Yilin Wang", "Jing Shi", "Subhojyoti Mukherjee", "Nikos Vlassis", "Krishna Kumar Singh"],
     venue: "Computer Vision and Pattern Recognition (CVPR), 2026",
@@ -201,18 +210,6 @@ window.PUBLICATIONS = [
     ],
     topics: ["learning"],
     selected: false
-  },
-  {
-    title: "GroundingBooth: Grounding Text-to-Image Customization",
-    authors: ["Zhexiao Xiong", "Wei Xiong", "Jing Shi", "He Zhang", "Yizhi Song", "Nathan Jacobs"],
-    venue: "Transactions on Machine Learning Research (TMLR), 2026",
-    image: "./assets/publications/2026_TMLR_groundingbooth/teaser.jpg",
-    links: [
-      { label: "Paper", url: "https://arxiv.org/abs/2409.08520" },
-      { label: "Project", url: "https://groundingbooth.github.io" }
-    ],
-    topics: ["personalization", "editing"],
-    selected: true
   },
   {
     title: "Relational Visual Similarity",
@@ -227,12 +224,15 @@ window.PUBLICATIONS = [
     selected: true
   },
   {
-    title: "RETOUCHIQ: MLLM Agents for Instruction-Based Image Retouching with Generalist Reward",
-    authors: ["Qiucheng Wu", "Jing Shi", "Simon Jenni", "Kushal Kafle", "Tianyu Wang", "Shiyu Chang", "Handong Zhao"],
-    venue: "Computer Vision and Pattern Recognition (CVPR), 2026",
-    image: "./assets/publications/2026_arxiv_retouchiq/teaser.jpg",
-    links: [{ label: "Paper", url: "https://arxiv.org/abs/2602.17558" }],
-    topics: ["editing", "vlm"],
+    title: "VISION-ZERO: Scalable VLM Self-Evolution via Multi-Agent Self-Play",
+    authors: ["Qinsi Wang", "Bo Liu", "Tianyi Zhou", "Jing Shi", "Yueqian Lin", "Yiran Chen", "Hai Helen Li", "Kun Wan", "Wentian Zhao"],
+    venue: "International Conference on Learning Representations (ICLR), 2026",
+    image: "./assets/publications/2025_arxiv_vision_zero/teaser.jpg",
+    links: [
+      { label: "Paper", url: "https://arxiv.org/abs/2509.25541" },
+      { label: "Code", url: "https://github.com/wangqinsi1/Vision-Zero" }
+    ],
+    topics: ["vlm", "learning"],
     selected: false
   },
   {
@@ -246,6 +246,18 @@ window.PUBLICATIONS = [
     ],
     topics: ["vlm", "learning"],
     selected: false
+  },
+  {
+    title: "GroundingBooth: Grounding Text-to-Image Customization",
+    authors: ["Zhexiao Xiong", "Wei Xiong", "Jing Shi", "He Zhang", "Yizhi Song", "Nathan Jacobs"],
+    venue: "Transactions on Machine Learning Research (TMLR), 2026",
+    image: "./assets/publications/2026_TMLR_groundingbooth/teaser.jpg",
+    links: [
+      { label: "Paper", url: "https://arxiv.org/abs/2409.08520" },
+      { label: "Project", url: "https://groundingbooth.github.io" }
+    ],
+    topics: ["personalization", "editing"],
+    selected: true
   },
   {
     title: "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
@@ -400,18 +412,6 @@ window.PUBLICATIONS = [
       { label: "Project", url: "https://plotnpolish.github.io/#" }
     ],
     topics: ["editing", "personalization", "preprint"],
-    selected: false
-  },
-  {
-    title: "VISION-ZERO: Scalable VLM Self-Evolution via Multi-Agent Self-Play",
-    authors: ["Qinsi Wang", "Bo Liu", "Tianyi Zhou", "Jing Shi", "Yueqian Lin", "Yiran Chen", "Hai Helen Li", "Kun Wan", "Wentian Zhao"],
-    venue: "International Conference on Learning Representations (ICLR), 2026",
-    image: "./assets/publications/2025_arxiv_vision_zero/teaser.jpg",
-    links: [
-      { label: "Paper", url: "https://arxiv.org/abs/2509.25541" },
-      { label: "Code", url: "https://github.com/wangqinsi1/Vision-Zero" }
-    ],
-    topics: ["vlm", "learning"],
     selected: false
   },
   {
