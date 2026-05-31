@@ -1,5 +1,7 @@
 h4 {
   letter-spacing: .1rem; }
+body {
+  background: #fff; }
 .container {
   max-width: 800px; }
 .header {
@@ -28,6 +30,52 @@ h4 {
   font-weight: 100;
   line-height: 25px;
   text-transform: none; }
+.publication-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0 6px; }
+.publication-tabs .button {
+  height: auto;
+  min-height: 28px;
+  padding: 0 12px;
+  margin: 0;
+  line-height: 26px;
+  white-space: normal;
+  text-transform: none; }
+.publication-tabs .button.active {
+  border-color: #1EAEDB;
+  color: #1EAEDB; }
+.publication-count {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 1.3rem;
+  margin: 0 0 18px; }
+.publication-entry {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  clear: both;
+  margin-bottom: 28px; }
+.publication-figure {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center; }
+.publication-figure img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 220px;
+  max-height: 130px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  background: #fff; }
+.publication-paper {
+  flex: 1 1 auto;
+  min-width: 0; }
+.paper-authors a,
+.paper-authors b,
+.paper-authors span {
+  overflow-wrap: anywhere; }
 .section-header {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -36,6 +84,7 @@ h4 {
 .docs-section {
   border-top: 1px solid #eee;
   padding: 4rem 0;
+  scroll-margin-top: 7.5rem;
   margin-bottom: 0;}
 .footer {
   text-align: center;
@@ -75,6 +124,22 @@ h4 {
 @media (min-width: 550px) {
   .header {
     margin-top: 5rem; }
+}
+
+@media (max-width: 549px) {
+  .publication-entry {
+    display: block; }
+  .publication-figure {
+    display: block;
+    margin-bottom: 10px; }
+  .publication-figure img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 220px;
+    box-sizing: border-box; }
+  .paper .button {
+    padding: 0 14px; }
 }
 
 /* Larger than tablet */
