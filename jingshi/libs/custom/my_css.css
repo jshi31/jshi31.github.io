@@ -15,6 +15,13 @@ body {
 .main-description .fa {
   font-size: 22px;
   margin-top: 5px; }
+.interest-list,
+.service-list {
+  margin-top: 8px;
+  margin-bottom: 18px; }
+.interest-list li,
+.service-list li {
+  margin-bottom: 8px; }
 .paper {
   margin-bottom: 20px }
 .paper .title {
@@ -30,11 +37,14 @@ body {
   font-weight: 100;
   line-height: 25px;
   text-transform: none; }
+.publication-title-tag {
+  color: #d62728;
+  font-weight: 600; }
 .publication-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 15px 0 6px; }
+  margin: 15px 0 18px; }
 .publication-tabs .button {
   height: auto;
   min-height: 28px;
@@ -46,10 +56,6 @@ body {
 .publication-tabs .button.active {
   border-color: #1EAEDB;
   color: #1EAEDB; }
-.publication-count {
-  color: rgba(0, 0, 0, 0.55);
-  font-size: 1.3rem;
-  margin: 0 0 18px; }
 .publication-entry {
   display: flex;
   gap: 24px;
@@ -76,6 +82,104 @@ body {
 .paper-authors b,
 .paper-authors span {
   overflow-wrap: anywhere; }
+
+/*  ================ Publication landscape map  ================ */
+.publication-map {
+  margin: 18px 0 2px; }
+.landscape-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible; }
+.lm-regions {
+  isolation: isolate; }
+.lm-region {
+  mix-blend-mode: multiply;
+  fill-opacity: 0.4;
+  transition: fill-opacity .25s; }
+.lm-region-active {
+  fill-opacity: 0.6; }
+.lm-region-dim {
+  fill-opacity: 0.12; }
+.lm-label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .02rem;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3.2px;
+  stroke-linejoin: round; }
+.lm-dot {
+  fill: #2b2b2b;
+  stroke: #fff;
+  stroke-width: 1px;
+  cursor: pointer;
+  transition: fill-opacity .2s, stroke-opacity .2s; }
+.lm-dot-selected {
+  fill: #111;
+  stroke-width: 1.4px; }
+.lm-dot-hover {
+  fill: #000; }
+.lm-dot-dim {
+  fill-opacity: 0.16;
+  stroke-opacity: 0.18; }
+.lm-dot-label {
+  fill: #222;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  paint-order: stroke;
+  pointer-events: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 3px; }
+.landscape-hint {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 0 0 10px; }
+.legend-swatch {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 7px;
+  vertical-align: middle; }
+.landscape-legend-item {
+  display: inline-flex;
+  align-items: center; }
+.landscape-tip {
+  position: absolute;
+  z-index: 9999;
+  max-width: 360px;
+  max-height: 72vh;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.17);
+  padding: 12px 14px;
+  display: none; }
+.landscape-tip-title {
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: #222;
+  margin-bottom: 3px; }
+.landscape-tip-venue {
+  color: #1EAEDB;
+  font-size: 1.1rem;
+  margin-bottom: 7px; }
+.landscape-tip-abs {
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 1.2rem;
+  line-height: 1.5; }
+.publication-entry-flash {
+  animation: pubflash 1.4s ease; }
+@keyframes pubflash {
+  0%, 20% { background: rgba(30, 174, 219, 0.15); }
+  100% { background: transparent; } }
 .section-header {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -127,6 +231,9 @@ body {
 }
 
 @media (max-width: 549px) {
+  .publication-map { display: none; }
+  .landscape-hint { display: none; }
+  .landscape-tip { display: none !important; }
   .publication-entry {
     display: block; }
   .publication-figure {
