@@ -199,7 +199,6 @@ window.PUBLICATIONS = [
       { label: "arXiv", url: "https://arxiv.org/abs/2606.01774" }
     ],
     description: "FLARE studies how to convert hybrid-attention autoregressive language models into diffusion language models that preserve seed-checkpoint capability while enabling iterative parallel denoising. The framework combines a token-balanced AR-and-diffusion objective, hardware-aware kernels for hybrid-attention states, and unified inference so one checkpoint can support both verified AR-style decoding and diffusion-style generation. The paper finds that transfer data quality is the strongest driver of capability preservation, more important than the specific loss or attention-mask design. Starting from strong AR checkpoints with limited post-training data, FLARE is competitive with leading open-source diffusion LLMs and improves throughput in single-GPU concurrent serving.",
-    mapLabel: "FLARE",
     topics: ["architecture"],
     selected: true
   },
